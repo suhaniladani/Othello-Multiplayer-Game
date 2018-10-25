@@ -1,0 +1,33 @@
+<div className="home">
+<div class="row" height="100px" background="/images/a.jpg">
+  <div class="col-lg-12">
+    <h1>Welcome to Othello Game</h1>
+  </div>
+
+  <div class="col-lg-6" className>
+    <p>Enter your name and the name of a game to join a game</p>
+    <p>To create a new game, pick an unused name and share it with the other players</p>
+    <p>The person creating the game will be host and will be assigned white color </p>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Join a Game</h2>
+
+    <%= form_for @conn, "/games/join", [as: :join_data], fn f -> %>
+    <div class="form-group">
+      <%= label(f, :user, "Your Name") %>
+      <%= text_input(f, :user, class: "form-control") %>
+    </div></br>
+    <div class="form-group">
+      <%= label(f, :game, "Game Name") %>
+      <%= text_input(f, :game, class: "form-control") %>
+    </div></br>
+    <div class="form-group">
+      <%= label(f, :observer, "Observer") %>
+      <%= checkbox(f, :observer, class: "form-control") %>
+    </div></br>
+    <%= submit "Join", class: "join" %>
+    <% end %>
+  </div>
+</div>
+</div>

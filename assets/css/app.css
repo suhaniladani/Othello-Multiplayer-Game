@@ -1,0 +1,178 @@
+@import "bootstrap";
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font: 14px "Century Gothic", Futura, sans-serif;
+	margin: 20px;
+	background-image: url(/images/image15.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1500px 1000px;
+
+	font-size: 20px;
+	color: white;
+
+}
+
+
+ol, ul {
+	padding-left: 30px;
+}
+
+.grid-row:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.gameStatus {
+	margin-bottom: 10px;
+}
+
+.tile {
+	background: #20b2aa;
+	border: 1px solid #111;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 55px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 55px;
+	border-radius: 0;
+	max-width: 12.5%;
+	border-radius: 5px;
+}
+
+.tile:focus {
+	outline: none;
+}
+
+.kbd-navigation .tile:focus {
+	background: #ddd;
+}
+
+.game {
+	/*display: flex;
+	flex-direction: row;*/
+	/*clear: both;
+
+	padding-left: 400px;*/
+	margin-left: 170px;
+
+   padding: 1em;
+   overflow: hidden;
+
+
+}
+
+.game-grid {
+	display: inline-block;
+	padding-top: 20px;
+
+
+}
+
+.game-left-side {
+	float: left;
+
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.info {
+
+	padding-top: 100px;
+	color: white;
+	font-size: 20px;
+	float: left;
+
+}
+
+
+
+
+.top {
+
+	padding-left: 25px;
+	color: white;
+	font-size: 20px;
+}
+
+.rules {
+	float: left;
+	max-width: 400px;
+	margin: 0;
+	padding: 2em;
+	font-size: 16.7px;
+	text-align: justify;
+
+
+}
+
+.available-tile {
+	cursor: pointer;
+}
+
+.not-available-tile {
+	cursor: not-allowed;
+}
+
+.marker {
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+.marker.black {
+	background: #111;
+}
+
+.marker.white {
+	background: #eee;
+	border: 1px solid #111;
+}
+
+.reset {
+	padding: 0.8rem 0.8rem;
+  background-color: coral;
+  border-radius: 10px;
+
+  color: ghostwhite;
+  font-size: 25px;
+  border: 1px solid black;
+
+}
+
+.reset1 {
+	padding: 0.8rem 0.8rem;
+  background: coral;
+  border-radius: 10px;
+
+  color: ghostwhite;
+  font-size: 25px;
+  border: 1px solid black;
+
+}
+
+.resetDiv {
+	padding-left: 130px;
+	padding-top: 10px;
+}
+
+.join {
+	padding: 0.8rem 0.8rem;
+  background-color: #20b2aa;
+  border-radius: 10px;
+
+  color: ghostwhite;
+  font-size: 25px;
+  border: 1px solid black;
+}

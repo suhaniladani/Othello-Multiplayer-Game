@@ -1,0 +1,12 @@
+<div id="root"></div>
+<script>
+window.othello_cfg = {
+  user: "<%= escape_javascript @user %>",
+  game: "<%= escape_javascript @game %>",
+  observer: "<%= escape_javascript @observer %>",
+  host: "<%= @host %>"
+
+
+};
+</script>
+<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
